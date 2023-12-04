@@ -21,7 +21,9 @@ h1, h2, h3, p, figure, ul{
 *{
    box-sizing: border-box;
 }
-
+ion-icon{
+   vertical-align: -.4rem;
+}
 
 /* ==============================
    SECTION 2: THEME CSS
