@@ -76,3 +76,9 @@ details summary{
 details p{
    padding: 0 .5rem;
 }
+/* footer */
+footer *{
+   text-align: center;
+   color: var(--letter-color);
+   line-height: 4.5rem;
+}
