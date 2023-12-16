@@ -18,17 +18,18 @@
     <meta name="twitter:title" content="Batman dc">
     <meta name="twitter:description" content="Page dédié aux DC : Batman">
     <meta name="twitter:image" content="https://giusmili.github.io/projet-dc/asset/cover.jpg">
+    <!-- titre de la page -->
     <title>Batman dc</title>
     
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/theme.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebSite">
     <header>
-        <h1>
+        <h1 itemprop="name">
             <span aria-hidden="true">&#127902; </span> Batman begins
         </h1>
     </header>
@@ -37,11 +38,13 @@
        <figure>
             <img 
             src="./asset/cover.jpg" 
-            alt="cover Batman" loading="lazy">
+            alt="cover Batman" loading="lazy" itemprop="image">
             <figcaption>
-                <h2><ion-icon name="film-outline"></ion-icon> Caracteristiques</h2>
-                <ul class="list-movie">
-                    <li>Franchise: DC Comics</li>
+                <h2 itemprop="name"><span aria-hidden="true">
+                    <ion-icon name="film-outline"></ion-icon>
+                </span> Caracteristiques</h2>
+                <ul itemscope itemtype="http://schema.org/ListItem">
+                    <li itemprop="genre">Franchise: DC Comics</li>
                     <li>Acteurs: Christian Bale, Michael Caine, Liam Neeson, Katie Holmes, Gary</li>
                     <li>Réalisateur: Christopher Nolan</li>
                     <li>Langues des sous titres: fr, it, esp</li>
@@ -52,7 +55,7 @@
                         
                         Description
                     </summary>
-                    <p>
+                    <p itemprop="description">
                         Comment un homme seul peut-il changer le monde ? 
                         Telle est la question qui hante Bruce Wayne depuis 
                         cette nuit tragique où ses parents furent abattus 
@@ -67,7 +70,7 @@
        </figure>
 
     </main>
-    <footer>
+    <footer itemprop="copyrightYear">
         <p>
             &copy; - MIT - <time 
                                 datetime="2023-11-10">
@@ -75,11 +78,8 @@
                             </time> 
         </p>
     </footer>
-    <script src="./js/app.js"></script>
- 
-    
-    
    
+    <script type="module" src="./js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
