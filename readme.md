@@ -1,6 +1,6 @@
 # 👽️Projet DC : Batman
 ![cover](https://hackmd.io/_uploads/rym574876.jpg)
-[Voir la page](https://giusmili.github.io/projet-dc/)
+💯[Voir la page](https://giusmili.github.io/projet-dc/)
 
 >📄Page de garde pour Batman
 
